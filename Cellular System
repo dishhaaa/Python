@@ -1,0 +1,32 @@
+import math
+import matplotlib.pyplot as plt
+a=3500 #km sq
+r= 3 #km
+s= 100
+n1=3
+n2=4
+n3=7
+Area_cell1=(3*math.sqrt(3)*r*r/2)
+Area_cell=round(Area_cell1)
+print(Area_cell, "is the area of one cell")
+total_cells=round(a/Area_cell)
+print(total_cells)
+m1= round(total_cells/n1)
+m2= round(total_cells/n2)
+m3= round(total_cells/n3)
+print(m1)
+print(m2)
+print(m3)
+C1=m1*s
+C2=m2*s
+C3=m3*s
+print (C1)
+print (C2)
+print (C3)
+x=[3,4,7] , y=[5100, 3800,2200]
+plt.xlabel('no of cells in a cluster')
+plt.plot(x,y)
+plt.xlabel('no of cells in a cluster')
+plt.ylabel('channel capacity')
+plt.title('graph plot')
+plt.show()
